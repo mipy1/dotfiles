@@ -1,0 +1,9 @@
+{
+    "workbench.colorTheme": "Mariana Nord",
+    "workbench.iconTheme": "material-icon-theme",
+    "git.autofetch": true,
+    "workbench.enableExperiments": false,
+    "sync.gist": "422423c6427120d11838e8166e44e5a8",
+    "editor.fontLigatures": true,
+    "editor.fontFamily": "'Cascadia Code', Consolas, 'Courier New', monospace"
+}
