@@ -291,6 +291,7 @@ exec_always --no-startup-id lxpolkit
 
 bindsym $mod+f exec thunar
 bindsym $mod+p exec "'/home/mipy/.config/i3lock/i3lock-colour-nordic.sh' && systemctl suspend"
+bindsym $mod+Ctrl+space exec rofimoji
 bindsym $mod+Shift+p exec epdfview
 bindsym $mod+v exec vivaldi-stable
 bindsym $mod+Shift+f exec firefox
@@ -299,6 +300,7 @@ bindsym $mod+Shift+t exec subl
 bindsym $mod+Shift+s exec spotify
 bindsym $mod+w exec "libreoffice --writer"
 bindsym $mod+m exec mathematica
+
 
 ####################### xinput #######################
 
