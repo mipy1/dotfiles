@@ -297,6 +297,7 @@ bindsym $mod+v exec vivaldi-stable
 bindsym $mod+Shift+f exec firefox
 bindsym $mod+Shift+d exec discord
 bindsym $mod+Shift+t exec subl
+bindsym $mod+t exec vscodium
 bindsym $mod+Shift+s exec spotify
 bindsym $mod+w exec "libreoffice --writer"
 bindsym $mod+m exec mathematica
