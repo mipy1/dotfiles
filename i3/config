@@ -303,6 +303,8 @@ bindsym $mod+w exec "libreoffice --writer"
 bindsym $mod+m exec mathematica
 
 
+
+
 ####################### xinput #######################
 
 exec xinput set-prop 12 321 0

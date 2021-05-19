@@ -1,0 +1,16 @@
+[user]
+	name = mipy1
+	email = 76726158+mipy1@users.noreply.github.com
+
+[color]
+  diff = auto
+	status = auto
+	branch = auto
+  interactive = auto
+	ui = auto
+  pager = true
+	branh = auto
+[credential]
+	helper = store
+[init]
+	defaultBranch = main
