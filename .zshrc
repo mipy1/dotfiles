@@ -84,11 +84,11 @@ mcd () {
     cd $1
 }
 # alias for searching through ps
-alias psg="ps aux | grep -v grep | grep -i -e VSZ -e" 
+alias psg="ps aux | grep -v grep | grep -i -e VSZ -e"
 # alias for mkdir so that it makes required parent directory
 alias mkdir="mkdir -p"
 # alias for colorls
-alias ls='colorls'
+alias ls='lsd'
 # alias for ranger
 alias fm='ranger'
 # alias for searching and installing packages
@@ -118,3 +118,4 @@ notify-send "cool2" "yeah it is working"'
 export PATH="/home/mipy/.local/bin:$PATH"
 export PATH="/home/mipy/.pycharm-2020.3.2/bin:$PATH"
 export XDG_CONFIG_HOME="${XDG_CONFIG_HOME:-$HOME/.config}"
+export PATH="/home/mipy/.gem/ruby/3.0.0/bin:$PATH"
