@@ -62,7 +62,7 @@ URxvt*depth:  32
 *.color14: nord7
 *.color15: nord6
 
-URxvt.font: xft:Cascadia Code PL:style=SemiLight:size=13:antialias=true,xft:Cousine Nerd Font Mono:style=Regular:autohint=true:size=13
+URxvt.font: xft:Cascadia Code PL:style=SemiLight:size=13:antialias=true,xft:Apple Color Emoji,xft:Cousine Nerd Font Mono:style=Regular:autohint=true:size=13
 URxvt.boldFont: xft:Cascadia Code PL:style=Bold:size=13:antialias=true
 URxvt.italicFont: xft:Cascadia Code PL:style=Italic:size=13:antialias=true
 URxvt.boldItalicFont: xft:Cascadia Code PL:style=Bold Italic:size=13:antialias=true

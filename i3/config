@@ -22,7 +22,7 @@ font pango:"Cousine Nerd Font Mono Regular" 10
 
 
 ####################### Start a Terminal #######################
-set $terminal terminator
+set $terminal urxvt
 
 bindsym $mod+Return exec $terminal
 
@@ -195,7 +195,7 @@ exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 ### Dropdown empty terminal scratchpad ###
 
 # Start at system startup
-exec --no-startup-id $terminal -c "dropdown"
+exec --no-startup-id $terminal -name "dropdown"
 
 for_window [instance="dropdown"] floating enable;
 for_window [instance="dropdown"] move scratchpad; [instance="dropdown"] scratchpad show; border pixel 5; move position center; move scratchpad
@@ -206,16 +206,16 @@ bindsym $mod+u [instance="dropdown"] scratchpad show, resize set 625 400
 
 # ### Dropdown arithmetic scratchpad ###
 
-# for_window [instance="maths"] floating enable
-# for_window [instance="maths"] move scratchpad
-# for_window [instance="maths"] border pixel 5
-# for_window [instance="maths"] resize set 800 300
+for_window [instance="maths"] floating enable
+for_window [instance="maths"] move scratchpad
+for_window [instance="maths"] border pixel 5
+for_window [instance="maths"] resize set 800 300
 
-# # Start at system startup
-# exec --no-startup-id ~/.config/i3/maths -e quich
+# Start at system startup
+exec --no-startup-id $terminal -name "maths" -e quich
 
-# # Show/hide the scratchpad
-# bindsym $mod+Shift+m [instance="maths"] scratchpad show; [instance="maths"] move position center
+# Show/hide the scratchpad
+bindsym $mod+Shift+m [instance="maths"] scratchpad show; [instance="maths"] move position center
 
 
 
