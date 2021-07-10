@@ -87,7 +87,7 @@ mcd () {
 alias psg="ps aux | grep -v grep | grep -i -e VSZ -e"
 # alias for mkdir so that it makes required parent directory
 alias mkdir="mkdir -p"
-# alias for colorls
+# alias for lsd
 alias ls='lsd'
 # alias for ranger
 alias fm='ranger'
@@ -103,17 +103,23 @@ alias p="pacman -Q | fzf"
 alias wifi="nmtui-connect"
 # alias for grep
 alias grep='grep --color=auto'
-# alias for running cpp files
+# alias for running rust files
 rc(){
-  g++ "$1" -o run
+  rustc "$1" -o run
   ./run
 }
+alias upd="yay -Syu --noconfirm"
 # alias for managing dotfiles with git bare
 alias config='/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME'
 # alias for checking dunst
 alias dun='killall dunst && dunst &
 notify-send "cool1" "yeah it is working"
 notify-send "cool2" "yeah it is working"'
+# alias for bat
+cat="bat --paging=never"
+
+# Why Fern, just why
+alias rachel_is_a_humannnnn_oooh_yeahhhhh="cat .config/tree.txt"
 
 export PATH="/home/mipy/.local/bin:$PATH"
 export PATH="/home/mipy/.pycharm-2020.3.2/bin:$PATH"

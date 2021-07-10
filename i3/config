@@ -22,9 +22,9 @@ font pango:"Cousine Nerd Font Mono Regular" 10
 
 
 ####################### Start a Terminal #######################
+set $terminal terminator
 
-bindsym $mod+Return exec xfce4-terminal
-
+bindsym $mod+Return exec $terminal
 
 
 ####################### i3 Windows Controls #######################
@@ -36,15 +36,15 @@ floating_modifier $mod
 bindsym $mod+q kill
 
 # change focus
-bindsym $mod+j focus left
-bindsym $mod+k focus down
-bindsym $mod+i focus up
+bindsym $mod+h focus left
+bindsym $mod+j focus down
+bindsym $mod+k focus up
 bindsym $mod+l focus right
 
 # move focused window
-bindsym $mod+Shift+j move left
-bindsym $mod+Shift+k move down
-bindsym $mod+Shift+i move up
+bindsym $mod+Shift+h move left
+bindsym $mod+Shift+j move down
+bindsym $mod+Shift+k move up
 bindsym $mod+Shift+l move right
 
 # alternatively, you can use the cursor keys:
@@ -54,10 +54,10 @@ bindsym $mod+Shift+Up move up
 bindsym $mod+Shift+Right move right
 
 # split in horizontal orientation
-bindsym $mod+Shift+h split h
+bindsym $mod+Shift+Ctrl+h split h
 
 # split in vertical orientation
-bindsym $mod+Shift+v split v
+bindsym $mod+Shift+Ctrl+v split v
 
 # enter fullscreen mode for the focused container
 #bindsym $mod+f fullscreen toggle
@@ -133,8 +133,8 @@ bindsym $mod+Shift+0 move container to workspace $ws10
 # Pressing right will grow the window’s width.
 # Pressing up will shrink the window’s height.
 # Pressing down will grow the window’s height.
-bindsym $mod+Ctrl+j resize shrink width 10 px or 10 ppt
-bindsym $mod+Ctrl+i resize grow height 10 px or 10 ppt
+bindsym $mod+Ctrl+h resize shrink width 10 px or 10 ppt
+bindsym $mod+Ctrl+j resize grow height 10 px or 10 ppt
 bindsym $mod+Ctrl+k resize shrink height 10 px or 10 ppt
 bindsym $mod+Ctrl+l resize grow width 10 px or 10 ppt
 
@@ -192,11 +192,30 @@ exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 
 ####################### Scratchpad #######################
 
-# Move the currently focused container to the scratchpad which contains
-# floating containers available on all workspaces
-bindsym $mod+shift+F5 move scratchpad
+### Dropdown empty terminal scratchpad ###
+
+# Start at system startup
+exec --no-startup-id $terminal -c "dropdown"
+
+for_window [instance="dropdown"] floating enable;
+for_window [instance="dropdown"] move scratchpad; [instance="dropdown"] scratchpad show; border pixel 5; move position center; move scratchpad
+
 # Show/hide the scratchpad
-bindsym $mod+F5 scratchpad show
+bindsym $mod+u [instance="dropdown"] scratchpad show, resize set 625 400
+
+
+# ### Dropdown arithmetic scratchpad ###
+
+# for_window [instance="maths"] floating enable
+# for_window [instance="maths"] move scratchpad
+# for_window [instance="maths"] border pixel 5
+# for_window [instance="maths"] resize set 800 300
+
+# # Start at system startup
+# exec --no-startup-id ~/.config/i3/maths -e quich
+
+# # Show/hide the scratchpad
+# bindsym $mod+Shift+m [instance="maths"] scratchpad show; [instance="maths"] move position center
 
 
 

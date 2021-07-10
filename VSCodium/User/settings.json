@@ -5,5 +5,8 @@
     "workbench.enableExperiments": false,
     "sync.gist": "422423c6427120d11838e8166e44e5a8",
     "editor.fontLigatures": true,
-    "editor.fontFamily": "'Cascadia Code', Consolas, 'Courier New', monospace"
+    "editor.fontFamily": "'Cascadia Code', Consolas, 'Courier New', monospace",
+    "explorer.confirmDragAndDrop": false,
+    "security.workspace.trust.untrustedFiles": "open",
+    "debug.allowBreakpointsEverywhere": true
 }
