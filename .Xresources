@@ -1,4 +1,3 @@
-
 !#! ------------------------------------------------------------------------------
 !#! ROFI Color theme 1
 !#! ------------------------------------------------------------------------------
@@ -7,6 +6,7 @@
 !#rofi.color-normal: #393939, #ffffff, #393939, #268bd2, #ffffff
 !#rofi.color-active: #393939, #268bd2, #393939, #268bd2, #205171
 !#rofi.color-urgent: #393939, #f3843d, #393939, #268bd2, #ffc39c
+
 
 
 !# ------------------------------------------------------------------------------
@@ -19,9 +19,12 @@ rofi.color-active: #393939, #268bd2, #393939, #268bd2, #205171
 rofi.color-urgent: #393939, #f3843d, #393939, #268bd2, #ffc39c
 
 
+
 !# ------------------------------------------------------------------------------
-!# XTERM Config Stuffs
+!# Config Stuffs
 !# ------------------------------------------------------------------------------
+
+! Colours
 
 #define nord0 #2E3440
 #define nord1 #3B4252
@@ -62,14 +65,37 @@ URxvt*depth:  32
 *.color14: nord7
 *.color15: nord6
 
+
+
+! Fonts
+
 URxvt.font: xft:Cascadia Code PL:style=SemiLight:size=13:antialias=true,xft:Apple Color Emoji,xft:Cousine Nerd Font Mono:style=Regular:autohint=true:size=13
 URxvt.boldFont: xft:Cascadia Code PL:style=Bold:size=13:antialias=true
 URxvt.italicFont: xft:Cascadia Code PL:style=Italic:size=13:antialias=true
 URxvt.boldItalicFont: xft:Cascadia Code PL:style=Bold Italic:size=13:antialias=true
 
+
+
+! Other bits and bobs
+
 *.scrollBar: false
 *.cursorBlink: true
+
+
+
+! URLs
 
 URxvt.urlLauncher: firefox
 URxvt.underlineURLs: true
 URxvt.urlButton: 1
+
+
+
+! Clipboard
+
+URxvt.iso14755 : false
+URxvt.keysym.Shift-Control-V: eval:paste_clipboard
+URxvt.keysym.Shift-Control-C: eval:selection_to_clipboard
+
+URxvt.keysym.Control-Meta-c: builtin-string:
+URxvt.keysym.Control-Meta-v: builtin-string:

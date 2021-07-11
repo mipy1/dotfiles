@@ -22,8 +22,8 @@ font pango:"Cousine Nerd Font Mono Regular" 10
 
 
 ####################### Start a Terminal #######################
-set $terminal urxvt
 
+set $terminal urxvt
 bindsym $mod+Return exec $terminal
 
 
@@ -59,9 +59,6 @@ bindsym $mod+Shift+Ctrl+h split h
 # split in vertical orientation
 bindsym $mod+Shift+Ctrl+v split v
 
-# enter fullscreen mode for the focused container
-#bindsym $mod+f fullscreen toggle
-
 # change container layout (stacked, tabbed, toggle split)
 bindsym $mod+s layout stacking
 bindsym $mod+e layout toggle split
@@ -74,9 +71,6 @@ bindsym $mod+space focus mode_toggle
 
 # focus the parent container
 bindsym $mod+a focus parent
-
-# focus the child container
-#bindsym $mod+d focus child
 
 
 
@@ -127,12 +121,6 @@ bindsym $mod+Shift+0 move container to workspace $ws10
 
 ####################### Resize Window #######################
 
-# These bindings trigger as soon as you enter the resize mode
-
-# Pressing left will shrink the window’s width.
-# Pressing right will grow the window’s width.
-# Pressing up will shrink the window’s height.
-# Pressing down will grow the window’s height.
 bindsym $mod+Ctrl+h resize shrink width 10 px or 10 ppt
 bindsym $mod+Ctrl+j resize grow height 10 px or 10 ppt
 bindsym $mod+Ctrl+k resize shrink height 10 px or 10 ppt
@@ -173,6 +161,8 @@ exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 
 # start rofi (a program launcher)
 bindsym $mod+d exec rofi -modi drun -show
+bindsym $mod+Shift+m exec "rofi -show calc -modi calc -no-show-match -no-sort"
+bindsym $mod+Ctrl+space exec rofimoji
 
 
 
@@ -184,8 +174,7 @@ bindsym XF86PowerOff exec /home/mipy/.config/rofi/applets/applets/powermenu.sh
 
 ####################### XSS-Lock #######################
 
-# xss-lock grabs a logind suspend inhibit lock and will use i3lock to lock the
-# screen before suspend. Use loginctl lock-session to lock your screen.
+
 exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 
 
@@ -202,20 +191,6 @@ for_window [instance="dropdown"] move scratchpad; [instance="dropdown"] scratchp
 
 # Show/hide the scratchpad
 bindsym $mod+u [instance="dropdown"] scratchpad show, resize set 625 400
-
-
-# ### Dropdown arithmetic scratchpad ###
-
-for_window [instance="maths"] floating enable
-for_window [instance="maths"] move scratchpad
-for_window [instance="maths"] border pixel 5
-for_window [instance="maths"] resize set 800 300
-
-# Start at system startup
-exec --no-startup-id $terminal -name "maths" -e quich
-
-# Show/hide the scratchpad
-bindsym $mod+Shift+m [instance="maths"] scratchpad show; [instance="maths"] move position center
 
 
 
@@ -251,19 +226,10 @@ bindsym XF86MonBrightnessDown exec xbacklight -dec 5 # decrease screen brightnes
 
 ####################### GAPS! #######################
 
-##border##
 
-#border_radius 2
-
-##hide_edge_borders##
-#for_window [class="^.*"] border pixel 0
-
-# Set inner/outer gaps
 gaps inner 8
 gaps outer 2
 gaps top 29
-#workspace $ws8 gaps inner 0
-#workspace $ws8 gaps outer 0
 
 
 
@@ -278,25 +244,24 @@ for_window [class="^feh"] border pixel 0
 
 
 
-
 ####################### Reloading, Restarting and Logging Out i3 #######################
 
-# reload the configuration file
+# Reload the configuration file
 bindsym $mod+Shift+c reload
-# restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
+# Restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 bindsym $mod+Shift+r restart
-# exit i3 (logs you out of your X session)
+# Exit i3 (logs you out of your X session)
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
 
 
 
-####################### Change Wallpaper #######################
+####################### Changing Wallpaper #######################
 
 exec feh --bg-fill "/home/mipy/Pictures/fall2.jpg"
 
 
 
-####################### Start Up #######################
+####################### Starting Up #######################
 
 exec nm-applet
 exec blueman-applet
@@ -310,7 +275,6 @@ exec_always --no-startup-id lxpolkit
 
 bindsym $mod+f exec thunar
 bindsym $mod+p exec "'/home/mipy/.config/i3lock/i3lock-colour-nordic.sh' && systemctl suspend"
-bindsym $mod+Ctrl+space exec rofimoji
 bindsym $mod+Shift+p exec epdfview
 bindsym $mod+v exec vivaldi-stable
 bindsym $mod+Shift+f exec firefox
@@ -323,8 +287,7 @@ bindsym $mod+m exec mathematica
 
 
 
-
-####################### xinput #######################
+####################### Xinput #######################
 
 exec xinput set-prop 12 321 0
 exec xinput set-prop "SYNA7DAB:00 06CB:CD40 Touchpad" "libinput Click Method Enabled" 0, 1 
