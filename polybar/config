@@ -28,12 +28,10 @@ alert = #BF616A
 white = #ECEFF4
 
 [bar/tray]
-;monitor = ${env:MONITOR:HDMI-1}
+
 width = 1.25%
 height = 24
 offset-x = 95.5%
-;offset-x = 1%
-;offset-y = 1%
 offset-y = 0.5%
 radius = 10.0
 fixed-center = true
@@ -41,9 +39,6 @@ bottom = false
 
 background = ${colors.background}
 foreground = ${colors.foreground}
-
-;line-size = 3
-;line-color = #f00
 
 border-size = 0
 border-color = #00000000
@@ -54,13 +49,10 @@ padding-right = 2
 module-margin-left = 1
 module-margin-right = 1
 
-font-0 = "JetBrainsMono Nerd Font Mono:size=11;2"
-font-1 = "JetBrainsMono Nerd Font Mono:size=13;3"
-font-2 = "JetBrainsMono Nerd Font Mono:size=15;3"
-font-3 = "JetBrainsMono Nerd Font Mono:size=16;3.8"
-;font-0 = fixed:pixelsize=11;1
-;font-1 = unifont:fontformat=truetype:size=11:antialias=false;0
-;font-2 = siji:pixelsize=11;1
+font-0 = "CaskaydiaCove Nerd Font Mono:size=11;2"
+font-1 = "CaskaydiaCove Nerd Font Mono:size=13;3"
+font-2 = "CaskaydiaCove Nerd Font Mono:size=15;3"
+font-3 = "CaskaydiaCove Nerd Font Mono:size=16;3.8"
 
 modules-center = invis
 
@@ -74,12 +66,9 @@ override-redirect = true
 enable-ipc = true
 
 [bar/power]
-;monitor = ${env:MONITOR:HDMI-1}
 width = 1.25%
 height = 24
 offset-x = 98.5%
-;offset-x = 1%
-;offset-y = 1%
 offset-y = 0.5%
 radius = 10.0
 fixed-center = true
@@ -87,9 +76,6 @@ bottom = false
 
 background = ${colors.background}
 foreground = ${colors.foreground}
-
-;line-size = 3
-;line-color = #f00
 
 border-size = 0
 border-color = #00000000
@@ -100,13 +86,10 @@ padding-right = 2
 module-margin-left = 1
 module-margin-right = 1
 
-font-0 = "JetBrainsMono Nerd Font Mono:size=11;2"
-font-1 = "JetBrainsMono Nerd Font Mono:size=13;3"
-font-2 = "JetBrainsMono Nerd Font Mono:size=15;3"
-font-3 = "JetBrainsMono Nerd Font Mono:size=16;3.8"
-;font-0 = fixed:pixelsize=11;1
-;font-1 = unifont:fontformat=truetype:size=11:antialias=false;0
-;font-2 = siji:pixelsize=11;1
+font-0 = "CaskaydiaCove Nerd Font Mono:size=11;2"
+font-1 = "CaskaydiaCove Nerd Font Mono:size=13;3"
+font-2 = "CaskaydiaCove Nerd Font Mono:size=15;3"
+font-3 = "CaskaydiaCove Nerd Font Mono:size=16;3.8"
 
 modules-center = power
 
@@ -117,12 +100,9 @@ enable-ipc = true
 
 [bar/info]
 
-;monitor = ${env:MONITOR:HDMI-1}
 width = 20%
 height = 24
 offset-x = 73.7%
-;offset-x = 1%
-;offset-y = 1%
 offset-y = 0.5%
 radius = 10.0
 fixed-center = true
@@ -130,9 +110,6 @@ bottom = false
 
 background = ${colors.background}
 foreground = ${colors.foreground}
-
-;line-size = 3
-;line-color = #f00
 
 border-size = 0
 border-color = #00000000
@@ -147,9 +124,6 @@ font-0 = "CaskaydiaCove Nerd Font Mono:size=11;3"
 font-1 = "CaskaydiaCove Nerd Font Mono:size=13;3"
 font-2 = "CaskaydiaCove Nerd Font Mono:size=15;3"
 font-3 = "CaskaydiaCove Nerd Font Mono:size=16;3.8"
-;font-0 = fixed:pixelsize=11;1
-;font-1 = unifont:fontformat=truetype:size=11:antialias=false;0
-;font-2 = siji:pixelsize=11;1
 
 wm-restack = i3
 
@@ -160,21 +134,15 @@ modules-right = backlight-acpi pulseaudio xkeyboard battery date
 
 
 [bar/i3]
-;monitor = ${env:MONITOR:HDMI-1}
 width = 20%:
 height = 24
 offset-x = 40%
-;offset-x = 1%
-;offset-y = 1%
 offset-y = 0.5%
 radius = 10.0
 fixed-center = true
 
 background = ${colors.background}
 foreground = ${colors.foreground}
-
-;line-size = 3
-;line-color = #f00
 
 border-size = 0
 border-color = #00000000
@@ -185,13 +153,10 @@ padding-right = 2
 module-margin-left = 1
 module-margin-right = 1
 
-font-0 = "JetBrainsMono Nerd Font Mono:size=11;2"
-font-1 = "JetBrainsMono Nerd Font Mono:size=13;3"
-font-2 = "JetBrainsMono Nerd Font Mono:size=15;3"
-font-3 = "JetBrainsMono Nerd Font Mono:size=16;3.8"
-;font-0 = fixed:pixelsize=11;1
-;font-1 = unifont:fontformat=truetype:size=11:antialias=false;0
-;font-2 = siji:pixelsize=11;1
+font-0 = "CaskaydiaCove Nerd Font Mono:size=11;2"
+font-1 = "CaskaydiaCove Nerd Font Mono:size=13;3"
+font-2 = "CaskaydiaCove Nerd Font Mono:size=15;3"
+font-3 = "CaskaydiaCove Nerd Font Mono:size=16;3.8"
 
 modules-center = i3
 
@@ -201,21 +166,15 @@ override-redirect = true
 enable-ipc = true
 
 [bar/example]
-;monitor = ${env:MONITOR:HDMI-1}
 width = 1.35%:
 height = 24
 offset-x = 0.2%
-;offset-x = 1%
-;offset-y = 1%
 offset-y = 0.5%
 radius = 10.0
 fixed-center = true
 
 background = ${colors.background}
 foreground = ${colors.foreground}
-
-;line-size = 3
-;line-color = #f00
 
 border-size = 0
 border-color = #00000000
@@ -226,24 +185,15 @@ padding-right = 1
 module-margin-left = 1
 module-margin-right = 1
 
-font-0 = "JetBrainsMono Nerd Font Mono:size=11;2"
-font-1 = "JetBrainsMono Nerd Font Mono:size=13;3"
-font-2 = "JetBrainsMono Nerd Font Mono:size=15;3"
-font-3 = "JetBrainsMono Nerd Font Mono:size=16;3.8"
-;font-0 = fixed:pixelsize=11;1
-;font-1 = unifont:fontformat=truetype:size=11:antialias=false;0
-;font-2 = siji:pixelsize=11;1
-
+font-0 = "CaskaydiaCove Nerd Font Mono:size=11;2"
+font-1 = "CaskaydiaCove Nerd Font Mono:size=13;3"
+font-2 = "CaskaydiaCove Nerd Font Mono:size=15;3"
+font-3 = "CaskaydiaCove Nerd Font Mono:size=16;3.8"
 modules-left = launcher
 
-
-;wm-restack = bspwm
 wm-restack = i3
 
 override-redirect = true
-
-;scroll-up = bspwm-desknext
-;scroll-down = bspwm-deskprev
 
 scroll-up = i3wm-wsnext
 scroll-down = i3wm-wsprev
@@ -268,7 +218,6 @@ type=custom/text
 content = 
 content-font=2
 content-foreground=#1793d1
-;content-foreground=${colors.foreground}
 content-padding=0
 click-left= "bash ~/.config/polybar/scripts/launcher.sh"
 
@@ -282,27 +231,18 @@ blacklist-0 = num lock
 
 format = <label-indicator>
 format-spacing = 0
-;format-prefix = " "
 format-prefix-foreground = ${colors.foreground-alt}
-;format-prefix-underline = ${colors.secondary}
-
-;label-layout = %icon%
-;label-layout-underline = ${colors.secondary}
 
 label-indicator = %icon%
 label-indicator-padding = 0
 label-indicator-margin = 0
-;label-indicator-background = ${colors.secondary}
-;label-indicator-underline = ${colors.secondary}
 
-; layout-icon-[0-9]+ = layout;icon
 ; Assign each layout an icon that will be available as %icon% token for the
 ; <label-layout> tag. The part before ';' will try to match %layout% value.
 layout-icon-default = 
 layout-icon-0 = 
 layout-icon-1 = 
 
-; indicator-icon-[0-9]+ = indicator;off icon;on icon
 ; Provides the content of the %icon% token in label-indicator-*
 indicator-icon-default = 
 indicator-icon-0 = caps lock;-CL;%{T4}%{T-}
@@ -332,24 +272,18 @@ ws-icon-7 = 8;%{T3}%{T-}
 ws-icon-8 = 9;%{T3}%{T-}
 ws-icon-9 = 10;%{T3}%{T-}
 ws-icon-default = " "
-format = <label-state> 
-;<label-mode>
+format = <label-state>
 index-sort = true
 wrapping-scroll = false
 
-; Only show workspaces on the same output as the bar
-;pin-workspaces = true
 
 label-mode-padding = 2
 label-mode-foreground = ${colors.primary}
 label-mode-background = ${colors.primary}
 
 ; focused = Active workspace on focused monitor
-;label-focused = %index%
 label-focused = %icon%
 label-focused-background = ${colors.primary}
-;${colors.background-alt}
-;label-focused-underline= ${colors.primary}
 label-focused-foreground= ${colors.white}
 label-focused-padding = 2
 

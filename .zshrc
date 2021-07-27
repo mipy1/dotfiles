@@ -83,22 +83,24 @@ mcd () {
     mkdir -p $1
     cd $1
 }
+# alias for clearing trash
+alias ct="rm -f ~/.local/share/Trash/files/*"
 # alias for searching through ps
 alias psg="ps aux | grep -v grep | grep -i -e VSZ -e"
 # alias for mkdir so that it makes required parent directory
 alias mkdir="mkdir -p"
 # alias for lsd
 alias ls='lsd'
-# alias for ranger
-alias fm='ranger'
+# alias for thunar
+alias fm='thunar'
 # alias for searching and installing packages
 alias pacs="pacman -Slq | fzf -m --preview 'cat <(pacman -Si {1}) <(pacman -Fl {1} | awk \"{print \$2}\")' | xargs -ro sudo pacman -S"
 # alias for searching and installing packages from AUR
 alias yays="yay -Slq | fzf -m --preview 'cat <(yay -Si {1}) <(yay -Fl {1} | awk \"{print \$2}\")' | xargs -ro  yay -S"
 # alias for searching and removing packages from system
-alias pacr="pacman -Qq | fzf --multi --preview 'pacman -Qi {1}' | xargs -ro sudo pacman -Rns"
+alias yayr="yay -Qq | fzf --multi --preview 'yay -Qi {1}' | xargs -ro yay -Rns"
 # alias for searching packages from system
-alias p="pacman -Q | fzf"
+alias p="yay -Q | fzf"
 # alias for wifi
 alias wifi="nmtui-connect"
 # alias for grep
@@ -116,7 +118,16 @@ alias dun='killall dunst && dunst &
 notify-send "cool1" "yeah it is working"
 notify-send "cool2" "yeah it is working"'
 # alias for bat
-cat="bat --paging=never"
+alias cat="bat --paging=never"
+# alias for cleaning my shit
+cleanMyShit () {
+  ## Cleans Pacman Cache
+  paccache -r
+  ## Cleans Orphaned Packages
+  yay -Rns $(yay -Qtdq)
+  ## Cleans Cache
+  rm -rf ~/.cache/*
+}
 
 # Why Fern, just why
 alias rachel_is_a_humannnnn_oooh_yeahhhhh="cat .config/tree.txt"

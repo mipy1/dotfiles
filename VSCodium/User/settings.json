@@ -3,10 +3,13 @@
     "workbench.iconTheme": "material-icon-theme",
     "git.autofetch": true,
     "workbench.enableExperiments": false,
-    "sync.gist": "422423c6427120d11838e8166e44e5a8",
     "editor.fontLigatures": true,
     "editor.fontFamily": "'Cascadia Code', Consolas, 'Courier New', monospace",
     "explorer.confirmDragAndDrop": false,
     "security.workspace.trust.untrustedFiles": "open",
-    "debug.allowBreakpointsEverywhere": true
+    "debug.allowBreakpointsEverywhere": true,
+    "redhat.telemetry.enabled": false,
+    "workbench.list.smoothScrolling": true,
+    "terminal.external.linuxExec": "xfce4-terminal",
+    "terminal.explorerKind": "external",
 }

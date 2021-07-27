@@ -166,12 +166,6 @@ bindsym $mod+Ctrl+space exec rofimoji
 
 
 
-####################### Start Rofi Widgets #######################
-
-bindsym XF86PowerOff exec /home/mipy/.config/rofi/applets/applets/powermenu.sh
-
-
-
 ####################### XSS-Lock #######################
 
 
@@ -244,7 +238,7 @@ for_window [class="^feh"] border pixel 0
 
 
 
-####################### Reloading, Restarting and Logging Out i3 #######################
+####################### Reloading, Restarting, Shutting Down and Logging Out #######################
 
 # Reload the configuration file
 bindsym $mod+Shift+c reload
@@ -268,7 +262,7 @@ exec blueman-applet
 exec --no-startup-id redshift
 exec_always --no-startup-id pkill picom; picom --no-use-damage
 exec_always --no-startup-id pkill dunst; dunst
-exec_always --no-startup-id lxpolkit
+exec_always --no-startup-id lxsession
 
 
 ####################### Bind Keys #######################
