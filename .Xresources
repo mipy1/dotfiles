@@ -47,7 +47,7 @@ URxvt*depth:  32
 
 ! Fonts
 
-URxvt.font: xft:Cascadia Code PL:style=SemiLight:size=13:antialias=true, xft:Apple Color Emoji:size=13:minspace=False, xft:Cousine Nerd Font Mono:size=13:minspace=False, xft: JetBrainsMono Nerd Font Mono:size=13:minspace=False, xft: Symbola
+URxvt.font: xft:Cascadia Code PL:style=SemiLight:size=13:antialias=true, xft:Cousine Nerd Font Mono:size=13:minspace=False, xft: JetBrainsMono Nerd Font Mono:size=13:minspace=False, xft: Symbola
 URxvt.boldFont: xft:Cascadia Code PL:style=Bold:size=13:antialias=true
 URxvt.italicFont: xft:Cascadia Code PL:style=SemiLight Italic:size=13:antialias=true
 URxvt.boldItalicFont: xft:Cascadia Code PL:style=Bold Italic:size=13:antialias=true

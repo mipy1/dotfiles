@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<object class="org.opensourcephysics.tools.Library">
+    <property name="open_tabs" type="array" class="[Ljava.lang.String;">
+        <property name="[0]" type="string">/home/mipy/.config/OSP/recent_collection.xml</property>
+    </property>
+    <property name="recently_opened" type="array" class="[Ljava.lang.String;">
+        <property name="[0]" type="string">v2.0/TrackCarExperimentv2.0.trz</property>
+    </property>
+    <property name="recently_opened_names" type="array" class="[Ljava.lang.String;">
+        <property name="[0]" type="string">TrackCarExperimentv2.0.trz</property>
+    </property>
+    <property name="cache" type="string">/home/mipy/.config/OSP/Cache</property>
+</object>

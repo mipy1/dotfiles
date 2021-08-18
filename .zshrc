@@ -128,6 +128,8 @@ cleanMyShit () {
   ## Cleans Cache
   rm -rf ~/.cache/*
 }
+# alias for emacs
+alias emacs="emacs -nw"
 
 # Why Fern, just why
 alias rachel_is_a_humannnnn_oooh_yeahhhhh="cat .config/tree.txt"

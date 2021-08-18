@@ -38,7 +38,24 @@ let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 
+" Load YCM (only)
+let &rtp .= ',' . expand( '<sfile>:p:h' )
+filetype plugin indent on
 
+" Enable debugging
+let g:ycm_keep_logfiles = 1
+let g:ycm_log_level = 'debug'
 
 " Vim Airline Config.
 let g:airline#extensions#tabline#enabled = 1
+
+" brackets
+
+    inoremap " ""<left>
+    inoremap ' ''<left>
+    inoremap ( ()<left>
+    inoremap [ []<left>
+    inoremap { {}<left>
+    inoremap {<CR> {<CR>}<ESC>O
+    inoremap {;<CR> {<CR>};<ESC>O
+

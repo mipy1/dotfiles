@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<object class="org.opensourcephysics.tools.LibraryCollection">
+    <property name="name" type="string">Recent Local Files</property>
+    <property name="base_path" type="string">/home/mipy/.config/OSP</property>
+    <property name="resources" type="array" class="[Lorg.opensourcephysics.tools.LibraryResource;">
+        <property name="[0]" type="object">
+        <object class="org.opensourcephysics.tools.LibraryResource">
+            <property name="name" type="string">Track Car Experiment v2.0</property>
+            <property name="html_path" type="string">TrackCarExperimentv2.0.trz!/html/TrackCarExperimentv2.0_info.html</property>
+            <property name="base_path" type="string">/home/mipy/Downloads/Track Car Experiment v2.0</property>
+            <property name="target" type="string">TrackCarExperimentv2.0.trz</property>
+            <property name="type" type="string">Tracker</property>
+        </object>
+        </property>
+    </property>
+    <property name="real_path" type="string">/home/mipy/.config/OSP/recent_collection.xml</property>
+</object>

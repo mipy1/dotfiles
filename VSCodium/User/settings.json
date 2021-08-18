@@ -12,4 +12,6 @@
     "workbench.list.smoothScrolling": true,
     "terminal.external.linuxExec": "xfce4-terminal",
     "terminal.explorerKind": "external",
+    "git.enableSmartCommit": true,
+    "git.confirmSync": false,
 }

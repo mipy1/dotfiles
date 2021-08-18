@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<object class="java.lang.Object">
+    <property name="TRACKER_HOME" type="string">/opt/tracker</property>
+    <property name="XUGGLE_HOME" type="string">/opt/tracker/Xuggle</property>
+    <property name="file_chooser_directory" type="string">/home/mipy/Downloads/Track Car Experiment v2.0</property>
+</object>
