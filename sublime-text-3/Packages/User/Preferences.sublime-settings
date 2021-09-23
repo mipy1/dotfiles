@@ -1,0 +1,11 @@
+{
+	"color_scheme": "Packages/Nord/Nord.sublime-color-scheme",
+	"font_size": 11,
+	"font_face": "Delugia",
+	"ignored_packages":
+	[
+		"Rust",
+		"Vintage"
+	],
+	"theme": "Adaptive.sublime-theme"
+}

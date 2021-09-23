@@ -1,0 +1,18 @@
+{
+    "workbench.colorTheme": "Nord",
+    "workbench.iconTheme": "material-icon-theme",
+    "git.autofetch": true,
+    "workbench.enableExperiments": false,
+    "editor.fontLigatures": true,
+    "editor.fontFamily": "'Delugia', Consolas, 'Courier New', monospace",
+    "explorer.confirmDragAndDrop": false,
+    "security.workspace.trust.untrustedFiles": "open",
+    "debug.allowBreakpointsEverywhere": true,
+    "redhat.telemetry.enabled": false,
+    "workbench.list.smoothScrolling": true,
+    "terminal.external.linuxExec": "xfce4-terminal",
+    "terminal.explorerKind": "external",
+    "git.enableSmartCommit": true,
+    "git.confirmSync": false,
+    "python.pythonPath": "/usr/bin/python3",
+}

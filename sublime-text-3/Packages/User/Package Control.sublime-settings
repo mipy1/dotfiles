@@ -1,0 +1,18 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"Github Tools",
+		"GitHubinator",
+		"Nord",
+		"Package Control",
+		"Python 3",
+		"Python Completions",
+		"Rust Enhanced",
+		"Terminal",
+		"TOML"
+	]
+}
